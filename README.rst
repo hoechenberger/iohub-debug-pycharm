@@ -2,6 +2,7 @@
 Using PyCharm to Debug ioHub and Psychopy
 =========================================
 
+
 Uninstall PyDev
 ===============
 If you already have ``PyDev`` installed, you should probably uninstall it
@@ -43,7 +44,8 @@ Prepare Your Code and Add Breakpoints
 =====================================
 Add the following code at the beginning of the program you wish to debug:
 
-.. code-block::
+.. code-block:: python
+
     import pydevd
 
     pydevd.settrace('localhost', port=54321, stdoutToServer=True,
@@ -51,7 +53,8 @@ Add the following code at the beginning of the program you wish to debug:
                     trace_only_current_thread=False)
 
 When this code is run, it will try to connect to the remote debugger, which
-is supposed to run on ``localhost:54321``. *Do not run it yet!*
+is supposed to run on ``localhost:54321``. Adjust the port
+number if needed. *Do not run it yet!*
 
 You may add breakpoints to your project. This can be done visually by
 left-clicking left of the lines at which you wish to halt execution.
@@ -69,7 +72,7 @@ The debug server will start and wait for a client to connect.
 
 .. image:: images/06-WaitingForConnection.png
 
-Run And Debug Your Project
+Run and Debug Your Project
 ==========================
 Select the run configuration for your project and click the **play** button
 to run it. *Do not click the debug button!*
