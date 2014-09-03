@@ -43,7 +43,7 @@ Prepare Your Code and Add Breakpoints
 =====================================
 Add the following code at the beginning of the program you wish to debug:
 
-.. code-block:: python
+.. code-block::
     import pydevd
 
     pydevd.settrace('localhost', port=54321, stdoutToServer=True,
