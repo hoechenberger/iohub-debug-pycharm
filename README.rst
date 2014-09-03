@@ -26,18 +26,18 @@ Add Remote Debugger to PyCharm
 Open your project in ``PyCharm`` and click on
 ``Run / Edit Configurations...``.
 
-.. image:: images/01 - Edit Configurations.png
+.. image:: images/01-EditConfigurations.png
 
 Click on the green ``+`` sign and select ``Python Remote Debug``.
 
-.. image:: images/02 - Add New Configuration.png
+.. image:: images/02-AddNewConfiguration.png
 
 Give a descriptive name to the remote debug configuration, like
 ``MyProject Remote Debug``. Set the port number the debugger should bind to
 (``54321`` will usually do). You should probably also tick the
 ``Single instance only`` checkbox.
 
-.. image:: images/03 - Remote Debug Configuration.png
+.. image:: images/03-RemoteDebugConfiguration.png
 
 Prepare Your Code and Add Breakpoints
 =====================================
@@ -56,30 +56,30 @@ is supposed to run on ``localhost:54321``. *Do not run it yet!*
 You may add breakpoints to your project. This can be done visually by
 left-clicking left of the lines at which you wish to halt execution.
 
-.. image:: images/04 - Add PyDev And Set Breakpoints.png
+.. image:: images/04-AddPyDevAndSetBreakpoints.png
 
 Start the Remote Debugger
 =========================
 Select the remote debugger configuration created earlier, and click on the
 debug button to run it.
 
-.. image:: images/05 - Run Remote Debug Server.png
+.. image:: images/05-RunRemoteDebugServer.png
 
 The debug server will start and wait for a client to connect.
 
-.. image:: images/06 - Waiting For Connection.png
+.. image:: images/06-WaitingForConnection.png
 
 Run And Debug Your Project
 ==========================
 Select the run configuration for your project and click the **play** button
 to run it. *Do not click the debug button!*
 
-.. image:: images/07 - Run Program.png
+.. image:: images/07-RunProgram.png
 
 The debugger will connect, and your code will be executed until it reaches
 the first breakpoint.
 
-.. image:: images/08 - Debug.png
+.. image:: images/08-Debug.png
 
 You may now step through your code and all functions
 it invokes, watch variables, or open a debug console for immediate pythonic
