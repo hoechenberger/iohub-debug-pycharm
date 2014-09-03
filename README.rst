@@ -72,7 +72,7 @@ The debug server will start and wait for a client to connect.
 
 .. image:: images/06-WaitingForConnection.png
 
-Run And Debug Your Project
+Run and Debug Your Project
 ==========================
 Select the run configuration for your project and click the **play** button
 to run it. *Do not click the debug button!*
